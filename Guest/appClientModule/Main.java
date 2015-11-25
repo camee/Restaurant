@@ -1,16 +1,23 @@
 import javax.ejb.EJB;
 
-import restaurantservice.PersonBeanRemote;
+import restaurantentities.Food;
+import restaurantentities.Person;
+import restaurantservice.RestaurantBeanRemote;
 import restaurantservice.PersonServiceRemote;
 
 public class Main {
 	@EJB
 	private static PersonServiceRemote personService;
-	private static PersonBeanRemote personBean;
+	@EJB
+	private static RestaurantBeanRemote restaurantBean;
 	
 	public static void main(String[] args) {
-		System.out.println(personService.add(5, 11));
-		personBean.setName("Szandi");
+		//System.out.println(personService.add(5, 11));
+		restaurantBean.setName("Brownie");
+		//restaurantBean.createFood("Lebbencs Leves", 550);
+		Food food = new Food();
+		food.setName("hello Tiramisu");
+		restaurantBean.helloFood(food);
 		
 	}
 

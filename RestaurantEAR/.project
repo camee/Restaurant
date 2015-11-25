@@ -3,9 +3,10 @@
 	<name>RestaurantEAR</name>
 	<comment></comment>
 	<projects>
+		<project>Guest</project>
 		<project>Restaurant</project>
 		<project>RestaurantClient</project>
-		<project>Guest</project>
+		<project>RestaurantModel</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

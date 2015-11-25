@@ -5,6 +5,8 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+import restaurantentities.OrderItem;
+
 /**
  * Session Bean implementation class OrderItemService
  */

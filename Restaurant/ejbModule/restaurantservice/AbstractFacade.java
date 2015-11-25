@@ -19,6 +19,7 @@ public abstract class AbstractFacade<T> {
  
                 public void create(T entity) {
                                em().persist(entity);
+                               System.out.println("Itt vagyunk az abstractfacade createben.");
                 }
                 
                 public void edit(T entity) {

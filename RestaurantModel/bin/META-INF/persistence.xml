@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="RestaurantModel">
+		<jta-data-source>java:jboss/datasources/Derby2</jta-data-source>
+		<class>restaurantentities.Feedback</class>
+		<class>restaurantentities.Food</class>
+		<class>restaurantentities.Order</class>
+		<class>restaurantentities.OrderItem</class>
+		<class>restaurantentities.Person</class>
+		<class>restaurantentities.TableItem</class>
+		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+		</properties>
+	</persistence-unit>
+</persistence>
